@@ -33,6 +33,7 @@
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
+	<link rel="stylesheet" href="plugin/pointer/pointer.css" />
 </head>
 
 <body>
@@ -58,9 +59,9 @@
 				<ul style="font-size: xx-large;">
 					<li>鎮静薬の歴史</li>
 					<li>鎮静薬の分類</li>
-					<li>鎮静薬の特徴</li>
+					<li>それぞれの薬剤の特徴</li>
 					<li>全国での使用状況</li>
-					<li>小児科での使用状況</li>
+					<li>熊大での使用状況</li>
 				</ul>
 			</section>
 
@@ -74,6 +75,7 @@
 					<h3>
 						鎮静薬の歴史
 					</h3>
+					<hr>
 					<div style="display:flex; display:-webkit-flex; display:-moz-flex;">
 						<div style="width:auto;flex: 1 0 90px;" class="r-stack">
 							<img class="fragment current-visible" data-fragment-index="30" src="fig\モルヒネ.png"
@@ -178,9 +180,9 @@
 					<div style="background-color: rgb(162, 211, 255);margin: 15px 10px 15px 10px;width:auto;flex:1 0">
 						<p style="font-size: 32px;"><b>抗ヒスタミン薬</b></p>
 						<ul style="font-size: 24px;">
-							<li>フェノバルビタール</li>
-							<li>ペントバルビタール</li>
-							<li>チアミラール</li>
+							<li>ヒドロキシジン</li>
+							<li>ジフェンヒドラミン</li>
+							<li>d-クロルフェニラミン</li>
 						</ul>
 					</div>
 					<div style="background-color: rgb(162, 211, 255);margin: 15px 10px 15px 10px;width:auto;flex:1 0">
@@ -203,8 +205,48 @@
 			</section>
 
 			<section>
-				<h2>アルコール・アルデヒド</h2>
-				
+				<section data-auto-animate>
+					<h3>アルコール・アルデヒド</h3>
+				</section>
+
+				<section data-auto-animate>
+					<h3>アルコール・アルデヒド</h3>
+					<hr>
+					<div style="display: flex; width: auto 1 0">
+						<div style="width: auto;flex: 1 1 ;">
+							<img src="fig/トリクロリールシロップ.jpg" width="40%">
+							<p style="font-size: 16px; margin-top:-30px;margin-bottom: 0px;">トリクロリールシロップ</p>
+							<img src="fig/エスクレ坐剤.jpg" width="60%">
+							<p style="font-size: 16px; margin: -30px; margin-bottom: 0px;">エスクレ坐剤</p>
+							<img src="fig/エスクレ注腸キット.jpg" width="70%">
+							<p style="font-size: 16px; margin: -30px; margin-bottom: 0px;">エスクレ注腸用キット</p>
+						</div>
+						<div style="width: auto;flex: 1 1 300px;">
+							<ul style="font-size: 36px;">
+								<li>作用機序</li>
+								<ul>
+									<li style="font-size: 27px;">体内でトリクロロエタノールに代謝され、GABA受容体に作用し中枢神経抑制作用を示す</li>
+								</ul>
+								<br>
+								<li>利点
+									<ul>
+										<li style="font-size: 28px;">静脈経路が必要ない</li>
+										<li style="font-size: 28px;">小児科領域では広く使われている薬剤であり、馴染みがある</li>
+										<li style="font-size: 28px;">オレンジの香りで、小児でも飲みやすい</li>
+									</ul>
+									<br>
+								<li>欠点
+									<ul>
+										<li style="font-size: 28px;">効果発現が遅く（30~60分）、作用持続時間も長い（2~8時間）</li>
+										<li style="font-size: 28px;">鎮痛作用はない</li>
+										<li style="font-size: 28px;">坐剤にはゼラチンが含まれるためアレルギーに注意</li>
+									</ul>
+								</li>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
 			</section>
 
 			<section data-background-iframe="fig\p-Q3-4.html" data-background-interactive data-preload>
@@ -227,6 +269,7 @@
 	<script src="plugin/search/search.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/pointer/pointer.js"></script>
 	<script>
 
 		// Also available as an ES module, see:
@@ -243,7 +286,7 @@
 			// concave	Slide at a concave angle
 			// zoom	Scale the incoming slide up so it grows in from the center of the screen
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealPointer]
 		});
 
 		// Reveal.initialize({
