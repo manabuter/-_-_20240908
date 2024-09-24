@@ -35,6 +35,33 @@
 
 	<link rel="stylesheet" href="plugin/pointer/pointer.css" />
 	<link rel="stylesheet" href="plugin/drawer/drawer.css" />
+
+	<style>
+		.custom-table {
+			width: 100%;
+			border-collapse: collapse;
+			font-size: 0.7em;
+			/* スライドに合わせてフォントサイズを調整 */
+			border-bottom: 2px solid #ddd;
+			/* 表の下線を追加 */
+		}
+
+		.custom-table th,
+		.custom-table td {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: center;
+		}
+
+		.custom-table th {
+			background-color: #68ac69;
+			color: white;
+		}
+
+		.custom-table .highlight {
+			background-color: #e2f0d6;
+		}
+	</style>
 </head>
 
 <body>
@@ -58,16 +85,66 @@
 			<section>
 				<h3>本日の内容</h3>
 				<ul style="font-size: xx-large;">
-					<li>鎮静薬の歴史</li>
-					<li>鎮静薬の分類</li>
-					<li>それぞれの薬剤の特徴</li>
-					<li>全国での使用状況</li>
-					<li>熊大での使用状況</li>
+					<li style="margin-top: 10px;">イントロ</li>
+					<li style="margin-top: 10px;">全国での使用状況</li>
+					<li style="margin-top: 10px;">熊大での使用状況</li>
+					<li style="margin-top: 10px;">鎮静薬の分類とそれぞれの薬剤の特徴</li>
 				</ul>
 			</section>
 
 			<section>
+				<h3>鎮静の定義</h3>
+				<hr>
+				<p class="fragment">conscious sedation<br>（意識下鎮静）</p>
+				<p class="fragment">&darr;</p>
+				<p class="fragment">procedural sedation<br>（処置時の鎮静）</p>
+				<p class="fragment">&darr;</p>
+				<P class="fragment">procedural sedation and <span class="fragment highlight-red">analgesia</span><br>
+					（処置時の鎮静および<span class="fragment highlight-red">鎮痛</span>）</P>
+			</section>
 
+			<section>
+				<h3>鎮静深度の分類</h3>
+				<table class="custom-table">
+					<tr>
+						<th></th>
+						<th style="text-align: center;">浅い</th>
+						<th style="text-align: center;">中等度</th>
+						<th style="text-align: center;">深い</th>
+						<th style="text-align: center;">全身麻酔</th>
+					</tr>
+					<tr>
+						<td class="highlight">反応性</td>
+						<td>呼びかけに正常に反応</td>
+						<td>呼びかけ,刺激で意味のある反応</td>
+						<td>繰り返す刺激に対して意味のある反応</td>
+						<td>痛み刺激に反応しない</td>
+					</tr>
+					<tr>
+						<td class="highlight">気道</td>
+						<td>影響なし</td>
+						<td>介入不要</td>
+						<td>介入必要なことがある</td>
+						<td>しばしば介入必要</td>
+					</tr>
+					<tr>
+						<td class="highlight">自発呼吸（換気）</td>
+						<td>影響なし</td>
+						<td>適切</td>
+						<td>時に不十分</td>
+						<td>頻繁に不十分</td>
+					</tr>
+					<tr>
+						<td class="highlight">循環</td>
+						<td>影響なし</td>
+						<td>通常は維持</td>
+						<td>通常は維持</td>
+						<td>障害される可能性</td>
+					</tr>
+				</table>
+			</section>
+
+			<section>
 				<section data-auto-animate data-autoanimate-id="history">
 					<h3>鎮静薬の歴史</h3>
 				</section>
@@ -312,6 +389,88 @@
 
 			<section data-auto-animate data-autoanimate-id="barb">
 				<h3>バルビツール酸系</h3>
+				<hr>
+				<div style="display: flex; width: auto 1 0">
+					<div style="width: auto;flex: 1 0 ;">
+						<img src="fig/イソゾール（チアミラール）製品写真.jfif" width="35%">
+						<p style="font-size: 16px; margin-top:-30px; margin-bottom: 0px;">イソゾール注</p>
+					</div>
+					<div style="width: auto;flex: 1 0 360px;">
+						<ul style="font-size: 36px;">
+							<li>作用機序</li>
+							<ul>
+								<li style="font-size: 27px;">GABA受容体に作用し中枢神経抑制作用を示す</li>
+							</ul>
+							<div style="height: 20px;"></div>
+							<li>利点
+								<ul>
+									<li style="font-size: 28px;">速やかな入眠が得られ、また作用時間も短い</li>
+									<li style="font-size: 28px;">持続注射ではなく、単回投与または間欠投与で使用可能</li>
+								</ul>
+								<div style="height: 20px;"></div>
+							<li>欠点
+								<ul>
+									<li style="font-size: 28px;">強アルカリのため血管外漏出で組織壊死のリスク</li>
+									<li style="font-size: 28px;">鎮痛作用はない</li>
+									<li style="font-size: 28px;">反復投与で半減期が延長し覚醒が遷延する</li>
+								</ul>
+							</li>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section data-auto-animate data-autoanimate-id="benzo">
+				<h3>ベンゾジアゼピン系</h3>
+			</section>
+
+			<section data-auto-animate data-autoanimate-id="benzo">
+				<h3>ベンゾジアゼピン系</h3>
+				<div style="display: flex;background-color: aliceblue;">
+					<div style="background-color: rgb(162, 211, 255);margin: 15px 10px 15px 10px;width:auto;flex:1 0">
+						<p style="font-size: 40px;"><b>催眠薬</b></p>
+						<p style="font-size: 20px; text-align: left;margin-left: 10px;">
+							ジアゼパム（セルシン）<br>
+							アルプラゾラム（ソラナックス）<br>
+							トリアゾラム（ハルシオン）<br>
+							ニトラゼパム（ネルボン）<br>
+							
+						</p>
+					</div>
+					<div style="background-color: rgb(162, 211, 255);margin: 15px 10px 15px 10px;width:auto;flex:1 0">
+						<p style="font-size: 40px;"><b>鎮静薬</b></p>
+						<p style="font-size: 20px; text-align: left;margin-left: 10px;">
+							ジアゼパム（セルシン）<br>
+							アルプラゾラム（ソラナックス）<br>
+							ロラゼパム（ワイパックス）<br>
+							ミダゾラム（ドルミカム）
+						</p>
+					</div>
+					<div style="background-color: rgb(162, 211, 255);margin: 15px 10px 15px 10px;width:auto;flex:1 0">
+						<p style="font-size: 40px;"><b>抗けいれん薬</b></p>
+						<p style="font-size: 20px; text-align: left;margin-left: 10px;">
+							ジアゼパム（セルシン）<br>
+							クロナゼパム（リボトリール）<br>
+							ロラゼパム（ワイパックス）<br>
+							クロバザム（マイスタン）
+						</p>
+					</div>
+				</div>
+				<div style="display: flex;background-color: aliceblue;">
+					<div style="width: 33.33%;"><img src="fig/イソミタール原末.jfif" width="100%"></div>
+					<div style="width: 33.33%;"><img src="fig/ラボナ錠.jfif" width="50%"></div>
+					<div style="width: 33.33%;">
+						<div style="display: flex; justify-content: space-around; align-items: center;">
+							<img src="fig/イソゾール（チアミラール）製品写真.jfif" style="width: 40%; height: auto;">
+							<img src="fig/ラボナール注射用_製剤写真.jpg" style="width: 40%; height: auto;">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section data-auto-animate data-autoanimate-id="benzo">
+				<h3>ベンゾジアゼピン系</h3>
 				<hr>
 				<div style="display: flex; width: auto 1 0">
 					<div style="width: auto;flex: 1 0 ;">
