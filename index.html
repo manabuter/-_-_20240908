@@ -3,105 +3,35 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js – The HTML Presentation Framework</title>
-
-	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-	<meta name="author" content="Hakim El Hattab">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>reveal.js</title>
 
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css">
 
-	<!-- themeはここで変更する -->
-	<link rel="stylesheet" href="dist/theme/white.css" id="theme">
-	<!-- black	Black background, white text, blue links (default)
-		white	White background, black text, blue links
-		league	Gray background, white text, blue links
-		beige	Beige background, dark text, brown links
-		sky	　　Blue background, thin dark text, blue links
-		night	Black background, thick white text, orange links
-		serif	Cappuccino background, gray text, brown links
-		simple	White background, black text, blue links
-		solarized	Cream-colored background, dark green text, blue links
-		blood	Dark background, thick white text, red links
-		moon	Dark blue background, thick grey text, blue links -->
-
-	<!-- Theme used for syntax highlighting of code -->
+	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
 	<link rel="stylesheet" href="plugin/pointer/pointer.css" />
 	<link rel="stylesheet" href="plugin/drawer/drawer.css" />
 
-	<style>
-		.custom-table {
-			width: 100%;
-			border-collapse: collapse;
-			font-size: 0.7em;
-			/* スライドに合わせてフォントサイズを調整 */
-			border-bottom: 2px solid #ddd;
-			/* 表の下線を追加 */
-		}
+	<link rel="stylesheet" href="css/custam.css"/>
 
-		.custom-table th,
-		.custom-table td {
-			border: 1px solid #ddd;
-			padding: 8px;
-			text-align: center;
-		}
-
-		.custom-table th {
-			background-color: #68ac69;
-			color: white;
-		}
-
-		.custom-table .highlight {
-			background-color: #e2f0d6;
-		}
-
-		.container {
-			display: flex;
-			flex-wrap: wrap;
-		}
-
-		.column {
-			flex: 1 1 300px;
-			margin: 10px;
-		}
-
-		.image-wrapper {
-			display: flex;
-			justify-content: space-around;
-			flex-wrap: wrap;
-		}
-
-		.image-wrapper img {
-			margin: 5px;
-			max-width: calc(50% - 20px);
-		}
-
-		img_fit {
-			width: 100%;
-			height: auto;
-			object-fit: contain;
-		}
-	</style>
 </head>
 
 <body>
+		<p><img src="fig/QR_330982.png" style="position:absolute; top:5px; right:5px; width:10%" ></p>
+		<p><img src="fig/差し棒 (1).png" style="position: absolute; top:2%; right: 92%; width: 7%;"></p>
 
 	<div class="reveal">
-
-
 
 		<div class="slides">
 
 			<section>
-				<h2>鎮静薬の種類と特性</h2>
-				<h6>小児科病棟で使用する薬剤を中心に</h6>
+				<h2>鎮静薬の種類と特徴</h2>
+				<h6>小児科で使用する薬剤を中心に</h6>
 				<br>
 				<p>
 					髙林学
@@ -113,8 +43,8 @@
 				<h3>本日の内容</h3>
 				<ul style="font-size: xx-large;">
 					<li style="margin-top: 10px;">イントロ</li>
-					<li style="margin-top: 10px;">全国での使用状況</li>
-					<li style="margin-top: 10px;">熊大での使用状況</li>
+					<li style="margin-top: 10px;">日本の子供に使用されている鎮静薬</li>
+					<li style="margin-top: 10px;">熊大で使用されている鎮静薬</li>
 					<li style="margin-top: 10px;">鎮静薬の分類とそれぞれの薬剤の特徴</li>
 					<ul style="margin-top: 5px; font-size: 30px;">
 						<li style="margin-top: 5px;">アルコール・アルデヒド</li>
@@ -320,6 +250,10 @@
 
 			<section data-background-iframe="fig\p-Q3-4.html" data-background-interactive>
 				<iframe></iframe>
+			</section>
+
+			<section>
+				<img src="fig/鎮静の適応と薬剤.png" class="r-stretch">
 			</section>
 
 			<section data-auto-animate data-autoanimate-id="alchol">
@@ -662,11 +596,11 @@
 						<img src="fig/ケタラール製品写真.jpg" width="40%">
 						<p style="font-size: 24px; margin-top:-30px; margin-bottom: 0px;">ケタラール注</p>
 					</div>
-					<div style="width: auto;flex: 1 0 360px;">
+					<div style="width: auto;flex: 1 0 400px;">
 						<ul style="font-size: 36px;">
 							<li>作用機序</li>
 							<ul>
-								<li style="font-size: 27px;">脳の表層部分の大脳皮質機能を抑制し、深層部分にある辺縁系機能を賦活する。解離性麻薬と呼ばれている。</li>
+								<li style="font-size: 27px;">大脳皮質機能を抑制、深層部分にある辺縁系機能を賦活。解離性麻薬と呼ばれている。</li>
 							</ul>
 							<div style="height: 20px;"></div>
 							<li>利点
@@ -691,7 +625,7 @@
 			</section>
 
 			<section>
-				<section data-background-gradient="linear-gradient(to bottom, #17b2c3, #283b95)" >
+				<section data-background-gradient="linear-gradient(to bottom, #4ba1d3, #283b95)" >
 					<div style="position: absolute; top: 10%; left: 10%; text-align: left;">
 					  <h2 style="margin: 0.5em 0; font-size: 1.5em;">トリクロリール・エスクレ</h2>
 					  <h2 style="margin: 0.5em 0; font-size: 1.5em;">イソゾール</h2>
@@ -700,6 +634,10 @@
 					</div>
 					<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 10em; opacity: 0.3; z-index: -3;">🐟</div>
 				  </section>
+			</section>
+
+			<section>
+				<h3>おわり</h3>
 			</section>
 		</div>
 

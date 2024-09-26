@@ -1,0 +1,59 @@
+	<style>
+		.custom-table {
+			width: 100%;
+			border-collapse: collapse;
+			font-size: 0.7em;
+			/* スライドに合わせてフォントサイズを調整 */
+			border-bottom: 2px solid #ddd;
+			/* 表の下線を追加 */
+		}
+
+		.custom-table th,
+		.custom-table td {
+			border: 1px solid #ddd;
+			padding: 8px;
+			text-align: center;
+		}
+
+		.custom-table th {
+			background-color: #68ac69;
+			color: white;
+		}
+
+		.custom-table .highlight {
+			background-color: #e2f0d6;
+		}
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.column {
+			flex: 1 1 300px;
+			margin: 10px;
+		}
+
+		.image-wrapper {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+
+		.image-wrapper img {
+			margin: 5px;
+			max-width: calc(50% - 20px);
+		}
+
+		img_fit {
+			width: 100%;
+			height: auto;
+			object-fit: contain;
+		}
+	</style>
+
+    <script>
+    document.write( '<link rel="stylesheet" href="css/print/' +
+      ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + 
+      '.css" type="text/css" media="print">' );
+  </script>
